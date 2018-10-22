@@ -1,0 +1,12 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    {% include 'blog/include/blogNav.html' %}
+    <h2> {{ object.title }} </h2>
+    <h5> joined the company on: {{ object.date }} </h5>
+    <h4> Employee Id: {{ object.employeeID }}</h4>
+   
+   <img src=" {{ object.employeeBarcode.url }} " width="400" height="240" > </img>
+
+   
+{% endblock %}
